@@ -19,12 +19,8 @@
       "paths": {
 				"*": ["types/*"],
         "@components/*": ["./components/*"],
-        // "@layouts/*": ["./layouts/*"],
         "@pages/*": ["./pages/*"],
-        // "@locale": ["./locale"],
-        // "@router": ["./router"],
-        // "@router/*": ["./router/*"],
-        // "*": ["*"]
+        "@styles/*": ["./styles/*"],
       }
     }
   }

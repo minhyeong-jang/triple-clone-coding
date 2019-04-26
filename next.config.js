@@ -5,8 +5,8 @@ module.exports = withTypescript({
       config.plugins = config.plugins || []
       config.resolve.alias = {
         ...config.resolve.alias,
+        '@styles': path.resolve(__dirname, 'styles'),
         '@components': path.resolve(__dirname, 'components'),
-        '@layouts': path.resolve(__dirname, 'layouts'),
         '@pages': path.resolve(__dirname, 'pages'),
         // '@router': path.resolve(__dirname, 'router')
       }
