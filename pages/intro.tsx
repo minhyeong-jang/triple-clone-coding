@@ -5,18 +5,17 @@ import Section02 from "@components/section02";
 
 type Props = {
   pathname: string;
-  test: string;
 };
 
-const Intro: NextFunctionComponent<Props> = ({ pathname, test }) => (
+const Intro: NextFunctionComponent<Props> = ({ pathname }) => (
   <div>
     <HeadingSection />
     <Section02 />
   </div>
 );
 
-Intro.getInitialProps = async ({ pathname, test }: NextContext) => {
-  return { pathname, test };
+Intro.getInitialProps = ({ pathname }: NextContext) => {
+  return { pathname };
 };
 
 export default Intro;
