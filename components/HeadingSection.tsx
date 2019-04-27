@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-// import ScrollAnimation from "react-animate-on-scroll";
+import { Waypoint } from "react-waypoint";
 
 const Container = styled.div`
   ${props => props.theme.container};
@@ -67,45 +67,35 @@ const PhoneScreen = styled.div`
 
 type Props = {};
 const HeadingSection: React.FunctionComponent<Props> = () => {
+  const [active, setActive] = useState(false);
   return (
-    <Container>
+    <Container className={active ? "animation-active" : undefined}>
+    <Waypoint topOffset={"30%"} onEnter={() => setActive(true)}>
       <Layout>
         <HeadingContent>
-          {/* <ScrollAnimation
-            animateIn="fadeInUp"
-            afterAnimatedIn={e => console.log("애니메이션 In", e)}
-            afterAnimatedOut={() => console.log("애니메이션 out")}
-            duration={0.7}
-            delay={700}
-            // scrollableParentSelector={console.log(e)}
-            animateOnce={true}
-          > */}
-            <Heading>
-              어디로
-              <br />
-              떠나시나요?
-            </Heading>
-          {/* </ScrollAnimation> */}
-          {/* <ScrollAnimation animateIn="fadeIn" duration={0.7} animateOnce={true}> */}
-            <SubHeading>
-              여행을 도와드리는 일은 <strong>트리플</strong>이 가장 잘합니다.
-            </SubHeading>
-            <AppButton
-              href="https://triple.onelink.me/aZP6?pid=intro_web&af_dp=triple%3A%2F%2F%2Fmy%2Fmileage%2Fintro&af_web_dp=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.titicacacorp.triple"
-              target="_blank"
-            >
-              앱 설치하기
-            </AppButton>
-          {/* </ScrollAnimation> */}
+          <Heading className="fadeInUp">
+            어디로
+            <br />
+            떠나시나요?
+          </Heading>
+          <SubHeading className="fadeIn">
+            여행을 도와드리는 일은 <strong>트리플</strong>이 가장 잘합니다.
+          </SubHeading>
+          <AppButton
+            className="fadeIn"
+            href="https://triple.onelink.me/aZP6?pid=intro_web&af_dp=triple%3A%2F%2F%2Fmy%2Fmileage%2Fintro&af_web_dp=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.titicacacorp.triple"
+            target="_blank"
+          >
+            앱 설치하기
+          </AppButton>
         </HeadingContent>
-        <PhoneContainer>
-          {/* <ScrollAnimation animateIn="fadeIn" duration={0.7} animateOnce={true}> */}
-            <PhoneFrame>
-              <PhoneScreen />
-            </PhoneFrame>
-          {/* </ScrollAnimation> */}
+        <PhoneContainer className="fadeIn">
+          <PhoneFrame>
+            <PhoneScreen />
+          </PhoneFrame>
         </PhoneContainer>
       </Layout>
+      </Waypoint>
     </Container>
   );
 };

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import CountUp from "react-countup";
-// import ScrollAnimation from "react-animate-on-scroll";
 import { Waypoint } from "react-waypoint";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 const Container = styled.div`
   ${props => props.theme.container};
@@ -30,7 +28,7 @@ const ContentLogo = styled.div`
 const MetricsContainer = styled.div`
   margin-left: 623px;
   padding-top: 150px;
-  animation-delay: 0.3s;
+  animation-delay: 0.1s;
   animation-duration: 0.7s;
 `;
 const MetricItem = styled.div`
@@ -42,7 +40,7 @@ const MetricItem = styled.div`
 const AwardsContainer = styled.div`
   margin: 50px 0px 140px 623px;
   white-space: nowrap;
-  animation-delay: 0.6s;
+  animation-delay: 0.2s;
   animation-duration: 0.7s;
 `;
 const AwardItem = styled.div`
@@ -65,29 +63,31 @@ const BoastSection: React.FunctionComponent<Props> = () => {
   const [active, setActive] = useState(false);
   return (
     <Container className={active ? "animation-active" : undefined}>
-      <Waypoint onEnter={() => setActive(true)}>
+      <Waypoint topOffset={"30%"} onEnter={() => setActive(true)}>
         <Layout>
           <ContentLogo className="fadeInUp">2019년 4월 기준</ContentLogo>
-          <MetricsContainer className="fadeInUp">
-            <MetricItem>
-              <strong>
-                <CountUp start={1} end={360} separator="," />만 명
-              </strong>
-              의 사용자
-            </MetricItem>
-            <MetricItem>
-              <strong>
-                <CountUp start={1} end={35} separator="," />만 명
-              </strong>
-              의 리뷰
-            </MetricItem>
-            <MetricItem>
-              <strong>
-                <CountUp start={1} end={1100} separator="," />만 명
-              </strong>
-              의 저장
-            </MetricItem>
-          </MetricsContainer>
+          {active ? (
+            <MetricsContainer className="fadeInUp">
+              <MetricItem>
+                <strong>
+                  <CountUp start={1} end={360} separator="," />만 명
+                </strong>
+                의 사용자
+              </MetricItem>
+              <MetricItem>
+                <strong>
+                  <CountUp start={1} end={35} separator="," />만 명
+                </strong>
+                의 리뷰
+              </MetricItem>
+              <MetricItem>
+                <strong>
+                  <CountUp start={1} end={1100} separator="," />만 명
+                </strong>
+                의 저장
+              </MetricItem>
+            </MetricsContainer>
+          ): null}
           <AwardsContainer className="fadeInUp">
             <AwardItem
               style={{
