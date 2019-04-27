@@ -13,6 +13,10 @@ const LINK_BUTTON = `
 `;
 
 export default {
+  container: `
+    position: relative;
+    overflow: hidden;
+  `,
   responsiveLayout: `
     position: relative;
     margin: 0 auto;

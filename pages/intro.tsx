@@ -1,7 +1,7 @@
 import * as React from "react";
 import { NextFunctionComponent, NextContext } from "next";
 import HeadingSection from "@components/HeadingSection";
-import Section02 from "@components/section02";
+import BoastSection from "@components/BoastSection";
 
 type Props = {
   pathname: string;
@@ -10,7 +10,7 @@ type Props = {
 const Intro: NextFunctionComponent<Props> = ({ pathname }) => (
   <div>
     <HeadingSection />
-    <Section02 />
+    <BoastSection />
   </div>
 );
 
