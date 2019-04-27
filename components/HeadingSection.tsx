@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 
 const Container = styled.div`
   ${props => props.theme.container};
@@ -71,14 +71,22 @@ const HeadingSection: React.FunctionComponent<Props> = () => {
     <Container>
       <Layout>
         <HeadingContent>
-          <ScrollAnimation animateIn="fadeInUp" duration={0.7} animateOnce={true}>
+          {/* <ScrollAnimation
+            animateIn="fadeInUp"
+            afterAnimatedIn={e => console.log("애니메이션 In", e)}
+            afterAnimatedOut={() => console.log("애니메이션 out")}
+            duration={0.7}
+            delay={700}
+            // scrollableParentSelector={console.log(e)}
+            animateOnce={true}
+          > */}
             <Heading>
               어디로
               <br />
               떠나시나요?
             </Heading>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn" duration={0.7} animateOnce={true}>
+          {/* </ScrollAnimation> */}
+          {/* <ScrollAnimation animateIn="fadeIn" duration={0.7} animateOnce={true}> */}
             <SubHeading>
               여행을 도와드리는 일은 <strong>트리플</strong>이 가장 잘합니다.
             </SubHeading>
@@ -88,15 +96,15 @@ const HeadingSection: React.FunctionComponent<Props> = () => {
             >
               앱 설치하기
             </AppButton>
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </HeadingContent>
         <PhoneContainer>
-            <ScrollAnimation animateIn="fadeIn" duration={0.7} animateOnce={true}>
-          <PhoneFrame>
-            <PhoneScreen />
-          </PhoneFrame>
-            </ScrollAnimation>  
-            </PhoneContainer>
+          {/* <ScrollAnimation animateIn="fadeIn" duration={0.7} animateOnce={true}> */}
+            <PhoneFrame>
+              <PhoneScreen />
+            </PhoneFrame>
+          {/* </ScrollAnimation> */}
+        </PhoneContainer>
       </Layout>
     </Container>
   );

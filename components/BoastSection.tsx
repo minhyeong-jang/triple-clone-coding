@@ -1,27 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import CountUp from "react-countup";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
+import { Waypoint } from "react-waypoint";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 const Container = styled.div`
   ${props => props.theme.container};
-  .example-enter {
-    opacity: 0.01;
-  }
-
-  .example-enter.example-enter-active {
-    opacity: 1;
-    transition: opacity 2000ms ease-in;
-  }
-
-  .example-leave {
-    opacity: 1;
-  }
-
-  .example-leave.example-leave-active {
-    opacity: 0.01;
-    transition: opacity 2000ms ease-in;
-  }
 `;
 const Layout = styled.div`
   ${props => props.theme.responsiveLayout};
@@ -40,10 +25,13 @@ const ContentLogo = styled.div`
   font-family: sans-serif;
   color: rgba(58, 58, 58, 0.7);
   background-repeat: no-repeat;
+  animation-duration: 0.7s;
 `;
 const MetricsContainer = styled.div`
   margin-left: 623px;
   padding-top: 150px;
+  animation-delay: 0.3s;
+  animation-duration: 0.7s;
 `;
 const MetricItem = styled.div`
   font-size: 36px;
@@ -54,6 +42,8 @@ const MetricItem = styled.div`
 const AwardsContainer = styled.div`
   margin: 50px 0px 140px 623px;
   white-space: nowrap;
+  animation-delay: 0.6s;
+  animation-duration: 0.7s;
 `;
 const AwardItem = styled.div`
   display: inline-block;
@@ -72,54 +62,55 @@ const AwardItem = styled.div`
 
 type Props = {};
 const BoastSection: React.FunctionComponent<Props> = () => {
+  const [active, setActive] = useState(false);
   return (
-    <Container>
-      <Layout>
-        
-      <ScrollAnimation animateIn="fadeIn" duration={0.7} animateOnce={true}>
-          <ContentLogo>2019년 4월 기준</ContentLogo>
-        </ScrollAnimation>
-        <MetricsContainer>
-          <MetricItem>
-            <strong>
-              <CountUp start={1} end={360} separator="," />만 명
-            </strong>
-            의 사용자
-          </MetricItem>
-          <MetricItem>
-            <strong>
-              <CountUp start={1} end={35} separator="," />만 명
-            </strong>
-            의 리뷰
-          </MetricItem>
-          <MetricItem>
-            <strong>
-              <CountUp start={1} end={1100} separator="," />만 명
-            </strong>
-            의 저장
-          </MetricItem>
-        </MetricsContainer>
-        <AwardsContainer>
-          <AwardItem
-            style={{
-              backgroundImage: "url(/static/images/img-02-badge-google@3x.png)"
-            }}
-          >
-            2018 구글 플레이스토어
-            <br />
-            올해의 앱 최우수상 수상
-          </AwardItem>
-          <AwardItem
-            style={{
-              backgroundImage: "url(/static/images/img-02-badge-apple@4x.png)"
-            }}
-          >
-            2018 애플 앱스토어
-            <br />
-            오늘의 여행앱 선정
-          </AwardItem>
-        </AwardsContainer>
-      </Layout>
+    <Container className={active ? "animation-active" : undefined}>
+      <Waypoint onEnter={() => setActive(true)}>
+        <Layout>
+          <ContentLogo className="fadeInUp">2019년 4월 기준</ContentLogo>
+          <MetricsContainer className="fadeInUp">
+            <MetricItem>
+              <strong>
+                <CountUp start={1} end={360} separator="," />만 명
+              </strong>
+              의 사용자
+            </MetricItem>
+            <MetricItem>
+              <strong>
+                <CountUp start={1} end={35} separator="," />만 명
+              </strong>
+              의 리뷰
+            </MetricItem>
+            <MetricItem>
+              <strong>
+                <CountUp start={1} end={1100} separator="," />만 명
+              </strong>
+              의 저장
+            </MetricItem>
+          </MetricsContainer>
+          <AwardsContainer className="fadeInUp">
+            <AwardItem
+              style={{
+                backgroundImage:
+                  "url(/static/images/img-02-badge-google@3x.png)"
+              }}
+            >
+              2018 구글 플레이스토어
+              <br />
+              올해의 앱 최우수상 수상
+            </AwardItem>
+            <AwardItem
+              style={{
+                backgroundImage: "url(/static/images/img-02-badge-apple@4x.png)"
+              }}
+            >
+              2018 애플 앱스토어
+              <br />
+              오늘의 여행앱 선정
+            </AwardItem>
+          </AwardsContainer>
+        </Layout>
+      </Waypoint>
     </Container>
   );
 };

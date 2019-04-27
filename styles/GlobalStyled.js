@@ -22,18 +22,18 @@ export default createGlobalStyle`
     outline: none;
   }
   
-  .fadeInUp {
+  .fadeInUp, .fadeIn {
+    opacity: 0;
+  }
+  .animation-active .fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
+     animation-fill-mode: forwards;
   }
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
+  .animation-active .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+       animation-fill-mode: forwards;
   }
 
   @keyframes fadeIn {
@@ -45,14 +45,24 @@ export default createGlobalStyle`
       opacity: 1;
     }
   }
-
-  .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-  }
   @keyframes fadeInUp {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: block;
+        opacity: 0;
+      transform: translate3d(0, 10%, 0);
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+      transform: translate3d(0, 0%, 0);
+    }
     from {
-      opacity: 0;
+      /* opacity: 0;
       -webkit-transform: translate3d(0, 10%, 0);
       transform: translate3d(0, 10%, 0);
     }
@@ -61,6 +71,6 @@ export default createGlobalStyle`
       opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
-    }
+    } */
   }
 `;

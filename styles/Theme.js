@@ -32,6 +32,6 @@ export default {
     &:hover {
       background-color: white;
       color: black; 
-    }                
-  `,
+    }
+  `
 }
