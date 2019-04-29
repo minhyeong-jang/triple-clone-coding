@@ -7,6 +7,9 @@ const Container = styled.div`
   &.heading {
     background-image: url("/static/images/img-01-bg.png");
   }
+  &.country {
+    background: center center / cover rgb(250, 250, 250);
+  }
 `;
 const Layout = styled.div`
   ${props => props.theme.responsiveLayout};
@@ -17,6 +20,7 @@ const Layout = styled.div`
     height: 573px;
   }
   &.default {
+    height: 1000px;
   }
 `;
 

@@ -1,100 +1,152 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import CountUp from "react-countup";
 
 import ReponsiveLayout from "@components/common/ReponsiveLayout";
 
-const ContentLogo = styled.div`
+const Heading = styled.div`
   position: absolute;
-  top: 150px;
-  width: 400px;
-  height: 338px;
-  padding-top: 280px;
-  font-size: 15px;
-  background-image: url("/static/images/img-02-triple@3x.png");
-  background-size: cover;
-  text-align: center;
-  color: rgba(58, 58, 58, 0.7);
-`;
-const MetricsContainer = styled.div`
-  position: absolute;
-  top: 150px;
-  right: 160px;
-  animation-delay: 0.1s;
-`;
-const MetricItem = styled.div`
-  font-size: 36px;
+  top: 240px;
   letter-spacing: -1px;
-  margin-bottom: 20px;
+  margin: 0px;
   color: rgb(58, 58, 58);
+  animation-delay: 0.3s;
+  h2 {
+    font-weight: 500;
+    line-height: 1.31;
+    font-size: 52px;
+  }
+  div {
+    font-size: 17px;
+    line-height: 1.76;
+    letter-spacing: -0.3px;
+    margin: 20px 0px 0px;
+  }
 `;
-const AwardsContainer = styled.div`
-  position: absolute;
-  bottom: 140px;
-  right: 10px;
-  animation-delay: 0.2s;
-`;
-const AwardItem = styled.div`
-  display: inline-block;
-  color: rgba(58, 58, 58, 0.8);
-  font-weight: bold;
-  background-repeat: no-repeat;
-  background-size: 54px 54px;
-  line-height: 22px;
-  padding: 5px 0px 5px 62px;
-  &:not(:last-child) {
-    margin-right: 39px;
+const ImageList = styled.div`
+  img {
+    position: absolute;
+  }
+  img:nth-child(1) {
+    width: 160px;
+    height: 160px;
+    top: 343px;
+    right: 438px;
+    animation-delay: 0.7s;
+  }
+  img:nth-child(2) {
+    width: 140px;
+    height: 140px;
+    top: 182px;
+    right: 315px;
+    animation-delay: 0.65s;
+  }
+  img:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    top: 151px;
+    right: 51px;
+    animation-delay: 0.5s;
+  }
+  img:nth-child(4) {
+    width: 150px;
+    height: 150px;
+    top: 173px;
+    right: -142px;
+    animation-delay: 0.75s;
+  }
+  img:nth-child(5) {
+    width: 200px;
+    height: 200px;
+    top: 346px;
+    right: 204px;
+    animation-delay: 0.6s;
+  }
+  img:nth-child(6) {
+    width: 220px;
+    height: 220px;
+    top: 368px;
+    right: -67px;
+    animation-delay: 0.75s;
+  }
+  img:nth-child(7) {
+    width: 200px;
+    height: 200px;
+    top: 323px;
+    right: -300px;
+    animation-delay: 0.65s;
+  }
+  img:nth-child(8) {
+    width: 130px;
+    height: 130px;
+    top: 523px;
+    right: 554px;
+    animation-delay: 0.75s;
+  }
+  img:nth-child(9) {
+    width: 170px;
+    height: 170px;
+    top: 561px;
+    right: 339px;
+    animation-delay: 0.65s;
+  }
+  img:nth-child(10) {
+    width: 200px;
+    height: 200px;
+    top: 577px;
+    right: 90px;
+    animation-delay: 0.8s;
+  }
+  img:nth-child(11) {
+    width: 170px;
+    height: 170px;
+    top: 568px;
+    right: -200px;
+    animation-delay: 0.6s;
+  }
+  img:nth-child(12) {
+    width: 120px;
+    height: 120px;
+    top: 717px;
+    right: -42px;
+    animation-delay: 0.8s;
   }
 `;
 
 type Props = {};
 const CountrySection: React.FunctionComponent<Props> = () => {
-  const [active, setActive] = useState(false);
   return (
-    <ReponsiveLayout layoutClass="boast" onWaypoint={active => setActive(active)}>
-      <ContentLogo className="fadeInUp">2019년 4월 기준</ContentLogo>
-      {active ? (
-        <MetricsContainer className="fadeInUp">
-          <MetricItem>
-            <strong>
-              <CountUp start={1} end={360} separator="," />만 명
-            </strong>
-            의 사용자
-          </MetricItem>
-          <MetricItem>
-            <strong>
-              <CountUp start={1} end={35} separator="," />만 명
-            </strong>
-            의 리뷰
-          </MetricItem>
-          <MetricItem>
-            <strong>
-              <CountUp start={1} end={1100} separator="," />만 명
-            </strong>
-            의 저장
-          </MetricItem>
-        </MetricsContainer>
-      ) : null}
-      <AwardsContainer className="fadeInUp">
-        <AwardItem
-          style={{
-            backgroundImage: "url(/static/images/img-02-badge-google@3x.png)"
-          }}
-        >
-          2018 구글 플레이스토어
+    <ReponsiveLayout containerClass="country">
+      <Heading className="fadeInUp">
+        <h2>
+          세계 120개 도시
           <br />
-          올해의 앱 최우수상 수상
-        </AwardItem>
-        <AwardItem
-          style={{
-            backgroundImage: "url(/static/images/img-02-badge-apple@4x.png)"
-          }}
-        >
-          2018 애플 앱스토어
+          무료 가이드
+        </h2>
+        <div>
+          여행마다 매번 사야 했던 가이드북
           <br />
-          오늘의 여행앱 선정
-        </AwardItem>
-      </AwardsContainer>
+          이제 무료로 보는 트리플 가이드로
+          <br />
+          보다 자세하게, 깔끔하게
+        </div>
+      </Heading>
+      <ImageList>
+        <img className="fadeInUp" src="/static/images/img-03-newyork@3x.png" />
+        <img
+          className="fadeInUp"
+          src="/static/images/img-03-vladivostok@3x.png"
+        />
+        <img className="fadeInUp" src="/static/images/img-03-rome@3x.png" />
+        <img className="fadeInUp" src="/static/images/img-03-sydney@3x.png" />
+        <img className="fadeInUp" src="/static/images/img-03-sapporo@3x.png" />
+        <img className="fadeInUp" src="/static/images/img-03-tokyo@3x.png" />
+        <img className="fadeInUp" src="/static/images/img-03-osaka@3x.png" />
+        <img className="fadeInUp" src="/static/images/img-03-laos@3x.png" />
+        <img className="fadeInUp" src="/static/images/img-03-paris@3x.png" />
+        <img className="fadeInUp" src="/static/images/img-03-london@3x.png" />
+        <img className="fadeInUp" src="/static/images/img-03-budapest@3x.png" />
+        <img className="fadeInUp" src="/static/images/img-03-melbourne@3x.png" />
+      </ImageList>
     </ReponsiveLayout>
   );
 };
