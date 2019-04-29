@@ -48,7 +48,7 @@ const AwardItem = styled.div`
 `;
 
 type Props = {};
-const BoastSection: React.FunctionComponent<Props> = () => {
+const CountrySection: React.FunctionComponent<Props> = () => {
   const [active, setActive] = useState(false);
   return (
     <ReponsiveLayout layoutClass="boast" onWaypoint={active => setActive(active)}>
@@ -99,4 +99,4 @@ const BoastSection: React.FunctionComponent<Props> = () => {
   );
 };
 
-export default BoastSection;
+export default CountrySection;

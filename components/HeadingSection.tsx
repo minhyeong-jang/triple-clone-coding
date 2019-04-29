@@ -2,15 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Waypoint } from "react-waypoint";
 
-const Container = styled.div`
-  ${props => props.theme.container};
-  background-image: url("/static/images/img-01-bg.png");
-  background-size: 100% 100%;
-`;
-const Layout = styled.div`
-  ${props => props.theme.responsiveLayout};
-  height: 860px;
-`;
+import ReponsiveLayout from "@components/common/ReponsiveLayout";
+
 const HeadingContent = styled.div`
   position: absolute;
   top: 220px;
@@ -67,36 +60,31 @@ const PhoneScreen = styled.div`
 
 type Props = {};
 const HeadingSection: React.FunctionComponent<Props> = () => {
-  const [active, setActive] = useState(false);
   return (
-    <Container className={active ? "animation-active" : undefined}>
-    <Waypoint topOffset={"30%"} onEnter={() => setActive(true)}>
-      <Layout>
-        <HeadingContent>
-          <Heading className="fadeInUp">
-            어디로
-            <br />
-            떠나시나요?
-          </Heading>
-          <SubHeading className="fadeIn">
-            여행을 도와드리는 일은 <strong>트리플</strong>이 가장 잘합니다.
-          </SubHeading>
-          <AppButton
-            className="fadeIn"
-            href="https://triple.onelink.me/aZP6?pid=intro_web&af_dp=triple%3A%2F%2F%2Fmy%2Fmileage%2Fintro&af_web_dp=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.titicacacorp.triple"
-            target="_blank"
-          >
-            앱 설치하기
-          </AppButton>
-        </HeadingContent>
-        <PhoneContainer className="fadeIn">
-          <PhoneFrame>
-            <PhoneScreen />
-          </PhoneFrame>
-        </PhoneContainer>
-      </Layout>
-      </Waypoint>
-    </Container>
+    <ReponsiveLayout containerClass="heading" layoutClass="heading">
+      <HeadingContent>
+        <Heading className="fadeInUp">
+          어디로
+          <br />
+          떠나시나요?
+        </Heading>
+        <SubHeading className="fadeIn">
+          여행을 도와드리는 일은 <strong>트리플</strong>이 가장 잘합니다.
+        </SubHeading>
+        <AppButton
+          className="fadeIn"
+          href="https://triple.onelink.me/aZP6?pid=intro_web&af_dp=triple%3A%2F%2F%2Fmy%2Fmileage%2Fintro&af_web_dp=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.titicacacorp.triple"
+          target="_blank"
+        >
+          앱 설치하기
+        </AppButton>
+      </HeadingContent>
+      <PhoneContainer className="fadeIn">
+        <PhoneFrame>
+          <PhoneScreen />
+        </PhoneFrame>
+      </PhoneContainer>
+    </ReponsiveLayout>
   );
 };
 

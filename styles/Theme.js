@@ -13,9 +13,11 @@ const LINK_BUTTON = `
 `;
 
 export default {
+  blackColor: "rgb(58, 58, 58)",
   container: `
     position: relative;
     overflow: hidden;
+    background-size: 100% 100%;
   `,
   responsiveLayout: `
     position: relative;
