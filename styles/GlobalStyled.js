@@ -24,6 +24,7 @@ export default createGlobalStyle`
   .fadeInUp, .fadeIn {
     opacity: 0;
     animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
   }
   .animation-active {
     * {

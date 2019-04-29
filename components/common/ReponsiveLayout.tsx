@@ -39,9 +39,7 @@ const ReponsiveLayout: React.FunctionComponent<Props> = ({
   const [waypointEnter, setWaypointEnter] = useState(false);
   return (
     <Container
-      className={`${containerClass || "default"} ${
-        waypointEnter ? "animation-active" : ""
-      }`}
+      className={`${containerClass || "default"} ${waypointEnter ? "animation-active" : ""}`}
     >
       <Waypoint
         topOffset={"30%"}

@@ -112,7 +112,7 @@ const ImageList = styled.div`
   }
 `;
 
-type Props = {};
+interface Props {}
 const CountrySection: React.FunctionComponent<Props> = () => {
   return (
     <ReponsiveLayout containerClass="country">

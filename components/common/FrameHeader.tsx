@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
@@ -10,6 +10,14 @@ const Container = styled.div`
   z-index: 1;
   background: white;
   height: 80px;
+  opacity: 0;
+  border-bottom: 1px solid rgb(239, 239, 239);
+  transform: translateY(-20%);
+  transition: all 400ms ease-in-out 0s;
+  &.active {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 `;
 const Logo = styled.a`
   position: absolute;
@@ -21,27 +29,45 @@ const Logo = styled.a`
   background-image: url("/static/images/img-intro-logo-dark@2x.png");
   transform: translateY(-50%);
 `;
-const ExtraActionsContainer = styled.div`
+const ExtraActionsContainer = styled.ul`
   position: absolute;
   right: 0px;
   top: 0px;
   bottom: 0px;
   padding-right: 50px;
 `;
-const ExtraActionItem = styled.a`
+const ExtraActionItem = styled.li`
   line-height: 80px;
   font-size: 17px;
   height: 80px;
   margin: 0px 0px 0px 34px;
-  color: rgba(58, 58, 58, 0.8);
+  color: ${props => props.theme.regularBlackColor};
   display: inline-block;
   cursor: pointer;
 `;
 
-const Header = () => {
+interface Props {}
+const FrameHeader: React.FunctionComponent<Props> = () => {
+  const [active, setActive] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 125) {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <Container>
-      <Logo />
+    <Container className={active ? "active" : ""}>
+      <Link href="/intro">
+        <Logo />
+      </Link>
       <ExtraActionsContainer>
         <Link href="/">
           <ExtraActionItem>Triple Team</ExtraActionItem>
@@ -54,4 +80,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default FrameHeader;

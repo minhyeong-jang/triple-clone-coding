@@ -14,7 +14,7 @@ const ContentLogo = styled.div`
   background-image: url("/static/images/img-02-triple@3x.png");
   background-size: cover;
   text-align: center;
-  color: rgba(58, 58, 58, 0.7);
+  color: ${props => props.theme.lightBlackColor};
 `;
 const MetricsContainer = styled.div`
   position: absolute;
@@ -26,7 +26,7 @@ const MetricItem = styled.div`
   font-size: 36px;
   letter-spacing: -1px;
   margin-bottom: 20px;
-  color: rgb(58, 58, 58);
+  color: ${props => props.theme.blackColor};
 `;
 const AwardsContainer = styled.div`
   position: absolute;
@@ -36,7 +36,7 @@ const AwardsContainer = styled.div`
 `;
 const AwardItem = styled.div`
   display: inline-block;
-  color: rgba(58, 58, 58, 0.8);
+  color: ${props => props.theme.regularBlackColor};
   font-weight: bold;
   background-repeat: no-repeat;
   background-size: 54px 54px;
@@ -47,11 +47,14 @@ const AwardItem = styled.div`
   }
 `;
 
-type Props = {};
+interface Props {}
 const BoastSection: React.FunctionComponent<Props> = () => {
   const [active, setActive] = useState(false);
   return (
-    <ReponsiveLayout layoutClass="boast" onWaypoint={active => setActive(active)}>
+    <ReponsiveLayout
+      layoutClass="boast"
+      onWaypoint={active => setActive(active)}
+    >
       <ContentLogo className="fadeInUp">2019년 4월 기준</ContentLogo>
       {active ? (
         <MetricsContainer className="fadeInUp">

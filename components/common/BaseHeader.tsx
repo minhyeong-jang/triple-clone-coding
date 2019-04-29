@@ -5,44 +5,44 @@ import Link from "next/link";
 const Container = styled.div`
   position: absolute;
   top: 0px;
-  right: 0px;
-  left: 0px;
+  width: 100%;
   z-index: 1;
   padding: 83px 50px 17px;
 `;
-
-const Logo = styled.a`
+const Logo = styled.div`
   display: inline-block;
   background-image: url("/static/images/img-main-logo-white@3x.png");
-  vertical-align: top;
-  background-repeat: no-repeat;
-  z-index: 1;
   width: 77px;
   height: 25px;
   background-size: 77px 25px;
+  cursor: pointer;
 `;
-
 const LinkContainer = styled.div`
   float: right;
-  a {
+  span {
     display: inline-block;
-    font-family: sans-serif;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-weight: 500;
-    height: 100%;
-    text-decoration: none;
     margin: 0px 0px 0px 34px;
     font-size: 17px;
+    cursor: pointer;
   }
 `;
 
-const Header = () => {
+interface Props {}
+const Header: React.FunctionComponent<Props> = () => {
   return (
     <Container>
-      <Logo />
+      <Link href="/intro">
+        <Logo />
+      </Link>
       <LinkContainer>
-        <a>Triple Team</a>
-        <a>Contact</a>
+        <Link href="/intro">
+          <span>Triple Team</span>
+        </Link>
+        <Link href="/intro">
+          <span>Contact</span>
+        </Link>
       </LinkContainer>
     </Container>
   );

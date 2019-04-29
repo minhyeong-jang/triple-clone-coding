@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Waypoint } from "react-waypoint";
 
 import ReponsiveLayout from "@components/common/ReponsiveLayout";
+import PhoneFrame from "@components/common/PhoneFrame";
 
 const HeadingContent = styled.div`
   position: absolute;
@@ -26,39 +26,13 @@ const AppButton = styled.a`
   ${props => props.theme.whiteLinkButton};
   margin: 76px 0px 0px;
 `;
-
 const PhoneContainer = styled.div`
   position: absolute;
   top: 229px;
   right: 0px;
 `;
-const PhoneFrame = styled.div`
-  background-color: rgb(250, 250, 250);
-  padding: 15px;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 13px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px -6px 9px 0px inset;
-  border-radius: 48px;
-  &::after {
-    position: absolute;
-    top: 0;
-    width: 162px;
-    height: 38px;
-    left: 50%;
-    margin-left: -81px;
-    border-radius: 18px;
-    background-color: rgb(250, 250, 250);
-    content: "";
-  }
-`;
-const PhoneScreen = styled.div`
-  width: 300px;
-  height: 650px;
-  background-size: cover;
-  border-radius: 33px;
-  background-image: url("/static/images/img-01-screen.jpg");
-`;
 
-type Props = {};
+interface Props {}
 const HeadingSection: React.FunctionComponent<Props> = () => {
   return (
     <ReponsiveLayout containerClass="heading" layoutClass="heading">
@@ -80,9 +54,7 @@ const HeadingSection: React.FunctionComponent<Props> = () => {
         </AppButton>
       </HeadingContent>
       <PhoneContainer className="fadeIn">
-        <PhoneFrame>
-          <PhoneScreen />
-        </PhoneFrame>
+        <PhoneFrame imageUrl="/static/images/img-01-screen.jpg" />
       </PhoneContainer>
     </ReponsiveLayout>
   );

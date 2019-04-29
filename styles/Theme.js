@@ -13,7 +13,9 @@ const LINK_BUTTON = `
 `;
 
 export default {
-  blackColor: "rgb(58, 58, 58)",
+  blackColor: "#3a3a3a",
+  regularBlackColor: "#3a3a3acc",
+  lightBlackColor: "#3a3a3ab3",
   container: `
     position: relative;
     overflow: hidden;
