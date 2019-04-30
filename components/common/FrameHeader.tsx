@@ -65,14 +65,14 @@ const FrameHeader: React.FunctionComponent<Props> = () => {
   }, []);
   return (
     <Container className={active ? "active" : ""}>
-      <Link href="/intro">
+      <Link href="/intro" as={ process.env.BACKEND_URL + '/intro'}>
         <Logo />
       </Link>
       <ExtraActionsContainer>
-        <Link href="/">
+        <Link href="/" as={ process.env.BACKEND_URL + '/'}>
           <ExtraActionItem>Triple Team</ExtraActionItem>
         </Link>
-        <Link href="/">
+        <Link href="/" as={ process.env.BACKEND_URL + '/'}>
           <ExtraActionItem>Contact</ExtraActionItem>
         </Link>
       </ExtraActionsContainer>

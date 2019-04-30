@@ -33,14 +33,14 @@ interface Props {}
 const Header: React.FunctionComponent<Props> = () => {
   return (
     <Container>
-      <Link href="/intro">
+      <Link href="/intro" as={ process.env.BACKEND_URL + '/intro'}>
         <Logo />
       </Link>
       <LinkContainer>
-        <Link href="/intro">
+        <Link href="/intro" as={ process.env.BACKEND_URL + '/intro'}>
           <span>Triple Team</span>
         </Link>
-        <Link href="/intro">
+        <Link href="/intro" as={ process.env.BACKEND_URL + '/intro'}>
           <span>Contact</span>
         </Link>
       </LinkContainer>
