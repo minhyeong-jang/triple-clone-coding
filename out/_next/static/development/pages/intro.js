@@ -570,48 +570,29 @@ var ReponsiveLayout = function ReponsiveLayout(_ref) {
       waypointEnter = _useState2[0],
       setWaypointEnter = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true),
-      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
-      isLoading = _useState4[0],
-      setIsLoading = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
-      _useState6 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState5, 2),
-      isWayPoint = _useState6[0],
-      setIsWayPoint = _useState6[1];
-
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    setIsLoading(false);
-
-    if (isWayPoint) {
-      if (onWaypoint) onWaypoint(true);
-      setWaypointEnter(true);
-    }
-  }, []);
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
     className: "".concat(containerClass || "default", " ").concat(waypointEnter ? "animation-active" : ""),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 41
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_waypoint__WEBPACK_IMPORTED_MODULE_3__["Waypoint"], {
     topOffset: "30%",
     onEnter: function onEnter() {
-      if (isLoading) setIsWayPoint(true);
       if (onWaypoint) onWaypoint(true);
       setWaypointEnter(true);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Layout, {
     className: layoutClass || "default",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 51
     },
     __self: this
   }, children)));
