@@ -1,21 +1,23 @@
 # Triple 코딩테스트
+[github page link](https://minhyeong-jang.github.io/triple-coding-nextjs/intro/)
 
 ### 서론
+ - - -
 안녕하세요, 프론트엔드 개발자 장민형 입니다.  
 
 > 기간 : 18/04/24 ~ 18/05/01  
 > 대표 라이브러리 : React, Next.js, Typescript, Styled Components
 
-요구사항에 비해 오버스팩이며 사용하지 않는 부분이 있습니다.  
-하지만 우대사항에 적혀있는 스팩들을 공부하며, 개발 가능한 부분을 알려드리고자 도입하였습니다.
+주로 React + Proptypes + Redux + Styled-components 를 사용하고 있습니다.
 
-또한, 요구사항은 개발 능력을 표출하기에 아쉬운 점이 있어서 레이아웃을 더 추가한 점 양해 부탁드립니다.  
+요구사항과 비교했을 때 오버스팩이며 사용하지 않아도 될 부분이 있지만,  
+우대사항에 적혀있는 기술들을 공부하며 개발 가능한 부분을 알려드리고자 도입하였습니다.
 
-( Next, Typescript+React 는 처음 사용해봐서 시간이 오래걸렸네요.. )
+추가로 요구사항은 개발 능력을 표출하기에 아쉬운 점이 있어서 레이아웃을 더 추가한 점 양해 부탁드립니다.  
 
 읽어주셔서 감사합니다!
 
-### 실행 발법
+### 실행 방법
 ```bash
 npm install
 npm run dev
@@ -25,6 +27,11 @@ or
 yarn install
 yarn dev
 ```
+
+### 개발 도구
+> Mac  
+> Vscode + Prettier  
+> Platform ( Mac - Chrome, IE - Chrome)
 
 
 ### 개발(파일) 설명
@@ -49,8 +56,9 @@ yarn dev
                  애니메이션이 작동하는 경우, LayoutFrame에서 이벤트를 리턴하여 렌더링 되게 하였습니다.
   CountrySection : 이미지마다 연관성이 없어 그대로 작성하였습니다.
 
-최소 화면폭에 맞춰 Header, Body는 1200px 이상부터 사이즈가 조절됩니다.
-이미지 로딩이 완료된 후 애니메이션이 시작되는 부분은 따로 추가하지 않았습니다.
+- 이미지 로딩이 완료된 후 애니메이션이 시작되는 부분은 따로 추가하지 않았습니다.
+- 상단 링크는 / or /intro 로 잡혀있습니다. target은 따로 주지 않았습니다.
+- 최소 화면폭에 맞춰 Header, Body는 1200px 이상부터 사이즈가 조절됩니다.
 ```
 ## 라이브러리 구성
 
