@@ -1,5 +1,5 @@
-const PC_SIZE = "1142px";
-const MOBILE_SIZE = "1141px";
+const PC_SIZE = "0px";
+// const MOBILE_SIZE = "1141px";
 const LINK_BUTTON = `
   display: block;
   width: 180px;

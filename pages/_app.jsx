@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import App, { Container } from "next/app";
 import BaseHeader from "@components/common/BaseHeader";
 import FrameHeader from "@components/common/FrameHeader";
@@ -12,6 +13,9 @@ export default class MyApp extends App {
     return (
       <ThemeProvider theme={Theme}>
         <Container>
+          <Head>
+            <title>Triple Clone</title>
+          </Head>
           <GlobalStyled />
           <BaseHeader />
           <FrameHeader />

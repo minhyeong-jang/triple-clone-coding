@@ -7,6 +7,7 @@ const Container = styled.div`
   top: 0px;
   right: 0px;
   left: 0px;
+  min-width: 1200px;
   z-index: 1;
   background: white;
   height: 80px;

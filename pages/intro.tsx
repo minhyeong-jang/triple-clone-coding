@@ -14,7 +14,8 @@ const Intro: NextFunctionComponent<Props> = () => {
       <BoastSection />
       <CountrySection />
     </React.Fragment>
-)}
+  );
+};
 
 Intro.getInitialProps = ({ pathname }: NextContext) => {
   return { pathname };

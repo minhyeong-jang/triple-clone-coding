@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React, {useEffect} from "react";
 import Router from "next/router";
 
-export default class extends Component {
-  componentDidMount() {
-		console.log(process.env.BACKEND_URL);
-    Router.push("/intro", process.env.BACKEND_URL + '/intro');
-  }
-  render() {
-    return <div>Redirect Intro</div>;
-  }
-}
+type Props = {};
+const Index: React.FunctionComponent<Props> = () => {
+  useEffect(() => {
+    Router.push("/intro", process.env.BACKEND_URL + "/intro");
+  });
+  return <div />;
+};
+
+export default Index;
