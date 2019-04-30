@@ -16,6 +16,9 @@
 추가로 요구사항은 개발 능력을 표출하기에 아쉬운 점이 있어서 레이아웃을 더 추가한 점 양해 부탁드립니다.  
 
 읽어주셔서 감사합니다!
+장민형 ( Minhyeong Jang )
+
+문의사항 : public.doriri@gmail.com
 
 ### 실행 방법
 ```bash
@@ -63,11 +66,9 @@ yarn dev
 ## 라이브러리 구성
 
 ### Next.js
-
 - 설치자료 : [react-ssr-next-js](https://holywater-jeong.github.io/blog/react-ssr-next-js/)
 
 ### Typescript
-
 - 설치자료 : [@zeit/next-typescript](https://www.npmjs.com/package/@zeit/next-typescript)
 - 컴포넌트 가이드 참고 : [FunctionComponent](https://fettblog.eu/typescript-react/components/)
 
@@ -78,6 +79,5 @@ yarn dev
 - 설치자료 : [react-waypoint](https://github.com/brigade/react-waypoint)
 
 ### Github Page
-
 - 참고자료 : [Next-gh-page-example](https://github.com/thierryc/Next-gh-page-example)
 - 이미지 로드 : [next-images](https://www.npmjs.com/package/next-images)
