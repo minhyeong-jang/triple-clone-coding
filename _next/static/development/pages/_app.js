@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/components/common/BaseHeader.tsx";
+var _jsxFileName = "/Users/noah/github/code-test/triple-coding-nextjs/components/common/BaseHeader.tsx";
 
 
 
@@ -25,7 +25,7 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "BaseHeader__Logo",
   componentId: "sc-1u9wf3y-1"
-})(["display:inline-block;background-image:url(\"/static/images/img-main-logo-white@3x.png\");width:77px;height:25px;background-size:77px 25px;cursor:pointer;"]);
+})(["display:inline-block;background-image:url(", ");width:77px;height:25px;background-size:77px 25px;cursor:pointer;"], __webpack_require__(/*! ../../static/images/img-main-logo-white@3x.png */ "./static/images/img-main-logo-white@3x.png"));
 var LinkContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "BaseHeader__LinkContainer",
   componentId: "sc-1u9wf3y-2"
@@ -40,6 +40,7 @@ var Header = function Header() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/intro",
+    as: "/intro",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
@@ -59,6 +60,7 @@ var Header = function Header() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/intro",
+    as: "/intro",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
@@ -72,6 +74,7 @@ var Header = function Header() {
     __self: this
   }, "Triple Team")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/intro",
+    as: "/intro",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
@@ -106,7 +109,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/components/common/FrameHeader.tsx";
+var _jsxFileName = "/Users/noah/github/code-test/triple-coding-nextjs/components/common/FrameHeader.tsx";
 
 
 
@@ -117,7 +120,7 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.wi
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.withConfig({
   displayName: "FrameHeader__Logo",
   componentId: "sc-1nj016y-1"
-})(["position:absolute;top:50%;left:50px;width:68px;height:24px;background-size:cover;background-image:url(\"/static/images/img-intro-logo-dark@2x.png\");transform:translateY(-50%);"]);
+})(["position:absolute;top:50%;left:50px;width:68px;height:24px;background-size:cover;background-image:url(", ");transform:translateY(-50%);"], __webpack_require__(/*! ../../static/images/img-intro-logo-dark@2x.png */ "./static/images/img-intro-logo-dark@2x.png"));
 var ExtraActionsContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].ul.withConfig({
   displayName: "FrameHeader__ExtraActionsContainer",
   componentId: "sc-1nj016y-2"
@@ -159,6 +162,7 @@ var FrameHeader = function FrameHeader() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/intro",
+    as: "/intro",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 68
@@ -178,6 +182,7 @@ var FrameHeader = function FrameHeader() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/",
+    as: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72
@@ -191,6 +196,7 @@ var FrameHeader = function FrameHeader() {
     __self: this
   }, "Triple Team")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/",
+    as: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 75
@@ -13465,7 +13471,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/pages/_app.tsx";
+var _jsxFileName = "/Users/noah/github/code-test/triple-coding-nextjs/pages/_app.tsx";
 
 
 
@@ -13536,6 +13542,28 @@ function (_App) {
 }(next_app__WEBPACK_IMPORTED_MODULE_7___default.a);
 
 
+
+/***/ }),
+
+/***/ "./static/images/img-intro-logo-dark@2x.png":
+/*!**************************************************!*\
+  !*** ./static/images/img-intro-logo-dark@2x.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
+/***/ "./static/images/img-main-logo-white@3x.png":
+/*!**************************************************!*\
+  !*** ./static/images/img-main-logo-white@3x.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARoAAABgCAQAAABodHUiAAAExUlEQVR42u2cW4hVVRjH17FSRw0LJYNg1ELroSwrewqkm2WRRTeKGCqpoCCKfIyS7EJIRATd6CGTeZp5CIqUtKBQh7wOEzPjZaabRWOhKdFcZNJ/nHmaxv2ts/fMPnutc+b3+16/tfa6/M4+56y913IOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBG/cqT7QlXeC9l2VM6onZ9rud1ScY+NOpUYo1vmiUeTd2jv9SpLVqna1K3Zr7RmhsnMEs/TXhmBlTKT5p82ZdwhQ3jqKddd2fow2KjlvfNEk+Po02H9YzOSdGaS43yd05glv7MYW6m1Ls0ZXZoaVTSlPlBq5AmZmnKt9QHI5OmzDr/jR5pwkpT5oXopJFadRbSxCyN9HB00khvI03c0gzquuikkVYjTczSSPsq/IoIIc0JzUGamKWp8BUVRBrzKwppYpGmN0JpTmreZJVmj7qNOGAOVrcZG1NLMzym5OEKXV5aiDQH1TUqevSvt01PBpbmuGcmxsbeHFeEvU0dTGxqW8ZakqXpPCNvrh7RUXOCXi5Emhlj8mZqhbrNNm0KLM36GJ9LFSrNSO48c4q2hZBmJHeaPjX/15WQJrg0zmmZhhPzfw4ljXOaoz4jfy7SRCCNc/oy+ZdUOGmc0ytG/hKkiUOa14xBnx1QmruM/JuRJg5pnjAG/fyA0lxl5K9AGqRBGqRBmskizVpj0M9DGqSx8j9LzB+yVzQLkGalkX8L0sSwTrNIA4n5h4L+5X7RyL86qDQdejdVvKNz63lFuEFtxpBvDbi4N0M9Rv6FQaVJz6I6lUYlLdehcb0rV93HCCV9YGQPJz05RprqSTOgTf+Lbfrb2+1lYaTRYn1ttumbxLqRpmrSZKPLe4X8pNmiL0bFVh3xtuo5pIlZmjUFSZOF01qANPFK06VpEUqz0agbaSKQZljXVrhCCGmG1Ig08UqztuIVQkhjbuJDmvDSvJriCsVL0+JZn0aawNKsSXWFoqVps1aOkSa8NH1pjvYoXJpmTfe2pjhpWnVDqlhe0E6ESO40j0cmzQk9W7E1PLAMLM2POjsaaQb1lrUVF2mKkaZX80fFEvMYt8eCS9OvXjXrPs1K2V+kKeqBpXkyX4/vLJjcpblcC8fE7MyjhjSFSXOZThuD3VSgNA05jBrSFPhqxGZjsA9U2rqONJNXmtvMXxUPIQ3SWC9h7TcfWE5BGqRJfN1TT5n3mvuRBmmSpZmp48aAf+9b00SaSSyNc1pv3mvuqXlp+nUsdXSkkuZkhhqPqblepWk0z55qr3lpsnA0lTTZ+KpOpXFOrWanV9WINBdXQZrfkMYnzfVmp3fXiDQNVZBmD9LIuy3XHqDba0Ea53Qwd2k+Qhq/NE1mt7+rEWlez12alUjjl2aqecJd4ikNEUpzQYWNf9mlKWkX0nikcU4vmR3fXgvSOKfV+UozcthJP9J0ej+pQ2bXb6oFabzij0sa53SH/kEaX5mPza5/WxvSOKd7K57Cnkka53SldsYvzX79kRAtGWt5I7GWzd4yV+jXxFLlOOPNel2kvsRMc8eUHkjM/0VTcx2/6WpSizr0u9kXK/aadd6qD7XbMzp2fOIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANLxH3rOtuDqPHtiAAAAAElFTkSuQmCC"
 
 /***/ }),
 

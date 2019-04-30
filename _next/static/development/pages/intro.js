@@ -17,7 +17,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_countup__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_countup__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_common_ReponsiveLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @components/common/ReponsiveLayout */ "./components/common/ReponsiveLayout.tsx");
 
-var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/components/BoastSection.tsx";
+var _jsxFileName = "/Users/noah/github/code-test/triple-coding-nextjs/components/BoastSection.tsx";
 
 
 
@@ -25,7 +25,7 @@ var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/components/
 var ContentLogo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "BoastSection__ContentLogo",
   componentId: "sc-1bbctwq-0"
-})(["position:absolute;top:150px;width:400px;height:338px;padding-top:280px;font-size:15px;background-image:url(\"/static/images/img-02-triple@3x.png\");background-size:cover;text-align:center;color:", ";"], function (props) {
+})(["position:absolute;top:150px;width:400px;height:338px;padding-top:280px;font-size:15px;background-image:url(", ");background-size:cover;text-align:center;color:", ";"], __webpack_require__(/*! ../static/images/img-02-triple@3x.png */ "./static/images/img-02-triple@3x.png"), function (props) {
   return props.theme.lightBlackColor;
 });
 var MetricsContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
@@ -151,7 +151,7 @@ var BoastSection = function BoastSection() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(AwardItem, {
     style: {
-      backgroundImage: "url(/static/images/img-02-badge-google@3x.png)"
+      backgroundImage: "url(".concat(__webpack_require__(/*! ../static/images/img-02-badge-google@3x.png */ "./static/images/img-02-badge-google@3x.png"))
     },
     __source: {
       fileName: _jsxFileName,
@@ -166,7 +166,7 @@ var BoastSection = function BoastSection() {
     __self: this
   }), "\uC62C\uD574\uC758 \uC571 \uCD5C\uC6B0\uC218\uC0C1 \uC218\uC0C1"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(AwardItem, {
     style: {
-      backgroundImage: "url(/static/images/img-02-badge-apple@4x.png)"
+      backgroundImage: "url(".concat(__webpack_require__(/*! ../static/images/img-02-badge-apple@4x.png */ "./static/images/img-02-badge-apple@4x.png"))
     },
     __source: {
       fileName: _jsxFileName,
@@ -199,7 +199,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_common_ReponsiveLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/common/ReponsiveLayout */ "./components/common/ReponsiveLayout.tsx");
-var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/components/CountrySection.tsx";
+var _jsxFileName = "/Users/noah/github/code-test/triple-coding-nextjs/components/CountrySection.tsx";
 
 
 
@@ -265,7 +265,7 @@ var CountrySection = function CountrySection() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "fadeInUp",
-    src: "/static/images/img-03-newyork@3x.png",
+    src: __webpack_require__(/*! ../static/images/img-03-newyork@3x.png */ "./static/images/img-03-newyork@3x.png"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 134
@@ -273,7 +273,7 @@ var CountrySection = function CountrySection() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "fadeInUp",
-    src: "/static/images/img-03-vladivostok@3x.png",
+    src: __webpack_require__(/*! ../static/images/img-03-vladivostok@3x.png */ "./static/images/img-03-vladivostok@3x.png"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 135
@@ -281,7 +281,31 @@ var CountrySection = function CountrySection() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "fadeInUp",
-    src: "/static/images/img-03-rome@3x.png",
+    src: __webpack_require__(/*! ../static/images/img-03-rome@3x.png */ "./static/images/img-03-rome@3x.png"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "fadeInUp",
+    src: __webpack_require__(/*! ../static/images/img-03-sydney@3x.png */ "./static/images/img-03-sydney@3x.png"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "fadeInUp",
+    src: __webpack_require__(/*! ../static/images/img-03-sapporo@3x.png */ "./static/images/img-03-sapporo@3x.png"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "fadeInUp",
+    src: __webpack_require__(/*! ../static/images/img-03-tokyo@3x.png */ "./static/images/img-03-tokyo@3x.png"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 139
@@ -289,7 +313,7 @@ var CountrySection = function CountrySection() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "fadeInUp",
-    src: "/static/images/img-03-sydney@3x.png",
+    src: __webpack_require__(/*! ../static/images/img-03-osaka@3x.png */ "./static/images/img-03-osaka@3x.png"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 140
@@ -297,7 +321,7 @@ var CountrySection = function CountrySection() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "fadeInUp",
-    src: "/static/images/img-03-sapporo@3x.png",
+    src: __webpack_require__(/*! ../static/images/img-03-laos@3x.png */ "./static/images/img-03-laos@3x.png"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 141
@@ -305,7 +329,7 @@ var CountrySection = function CountrySection() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "fadeInUp",
-    src: "/static/images/img-03-tokyo@3x.png",
+    src: __webpack_require__(/*! ../static/images/img-03-paris@3x.png */ "./static/images/img-03-paris@3x.png"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 142
@@ -313,7 +337,7 @@ var CountrySection = function CountrySection() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "fadeInUp",
-    src: "/static/images/img-03-osaka@3x.png",
+    src: __webpack_require__(/*! ../static/images/img-03-london@3x.png */ "./static/images/img-03-london@3x.png"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 143
@@ -321,7 +345,7 @@ var CountrySection = function CountrySection() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "fadeInUp",
-    src: "/static/images/img-03-laos@3x.png",
+    src: __webpack_require__(/*! ../static/images/img-03-budapest@3x.png */ "./static/images/img-03-budapest@3x.png"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 144
@@ -329,34 +353,10 @@ var CountrySection = function CountrySection() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "fadeInUp",
-    src: "/static/images/img-03-paris@3x.png",
+    src: __webpack_require__(/*! ../static/images/img-03-melbourne@3x.png */ "./static/images/img-03-melbourne@3x.png"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 145
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "fadeInUp",
-    src: "/static/images/img-03-london@3x.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "fadeInUp",
-    src: "/static/images/img-03-budapest@3x.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 147
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "fadeInUp",
-    src: "/static/images/img-03-melbourne@3x.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 148
     },
     __self: this
   })));
@@ -380,7 +380,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_common_ReponsiveLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/common/ReponsiveLayout */ "./components/common/ReponsiveLayout.tsx");
 /* harmony import */ var _components_common_PhoneFrame__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/common/PhoneFrame */ "./components/common/PhoneFrame.tsx");
-var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/components/HeadingSection.tsx";
+var _jsxFileName = "/Users/noah/github/code-test/triple-coding-nextjs/components/HeadingSection.tsx";
 
 
 
@@ -466,7 +466,7 @@ var HeadingSection = function HeadingSection() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_common_PhoneFrame__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    imageUrl: "/static/images/img-01-screen.jpg",
+    imageUrl: __webpack_require__(/*! ../static/images/img-01-screen.jpg */ "./static/images/img-01-screen.jpg"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
@@ -491,7 +491,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/components/common/PhoneFrame.tsx";
+var _jsxFileName = "/Users/noah/github/code-test/triple-coding-nextjs/components/common/PhoneFrame.tsx";
 
 
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
@@ -542,16 +542,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react_waypoint__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-waypoint */ "./node_modules/react-waypoint/es/index.js");
 
-var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/components/common/ReponsiveLayout.tsx";
+var _jsxFileName = "/Users/noah/github/code-test/triple-coding-nextjs/components/common/ReponsiveLayout.tsx";
 
 
 
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "ReponsiveLayout__Container",
   componentId: "sc-1lrmk5t-0"
-})(["", ";&.heading{background-image:url(\"/static/images/img-01-bg.png\");}&.country{background:center center / cover rgb(250,250,250);}"], function (props) {
+})(["", ";&.heading{background-image:url(", ");}&.country{background:center center / cover rgb(250,250,250);}"], function (props) {
   return props.theme.container;
-});
+}, __webpack_require__(/*! ../../static/images/img-01-bg.png */ "./static/images/img-01-bg.png"));
 var Layout = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "ReponsiveLayout__Layout",
   componentId: "sc-1lrmk5t-1"
@@ -2342,10 +2342,10 @@ function index (resultFn, isEqual) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fintro&absolutePagePath=%2FUsers%2Fnoah%2Fgithub%2Fcode-test%2Ftriple-clone-coding%2Fpages%2Fintro.tsx!./":
-/*!************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fintro&absolutePagePath=%2FUsers%2Fnoah%2Fgithub%2Fcode-test%2Ftriple-clone-coding%2Fpages%2Fintro.tsx ***!
-  \************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fintro&absolutePagePath=%2FUsers%2Fnoah%2Fgithub%2Fcode-test%2Ftriple-coding-nextjs%2Fpages%2Fintro.tsx!./":
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fintro&absolutePagePath=%2FUsers%2Fnoah%2Fgithub%2Fcode-test%2Ftriple-coding-nextjs%2Fpages%2Fintro.tsx ***!
+  \*************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7423,7 +7423,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_HeadingSection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/HeadingSection */ "./components/HeadingSection.tsx");
 /* harmony import */ var _components_BoastSection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/BoastSection */ "./components/BoastSection.tsx");
 /* harmony import */ var _components_CountrySection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/CountrySection */ "./components/CountrySection.tsx");
-var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/pages/intro.tsx";
+var _jsxFileName = "/Users/noah/github/code-test/triple-coding-nextjs/pages/intro.tsx";
 
 
 
@@ -7431,28 +7431,28 @@ var _jsxFileName = "/Users/noah/github/code-test/triple-clone-coding/pages/intro
 
 var Intro = function Intro(_ref) {
   var pathname = _ref.pathname;
-  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_HeadingSection__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_BoastSection__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeadingSection__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_CountrySection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BoastSection__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CountrySection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
     },
     __self: this
   }));
@@ -7469,14 +7469,201 @@ Intro.getInitialProps = function (_ref2) {
 
 /***/ }),
 
+/***/ "./static/images/img-01-bg.png":
+/*!*************************************!*\
+  !*** ./static/images/img-01-bg.png ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-01-bg-129e8827da2c9f8b931e3eec73132ea6.png";
+
+/***/ }),
+
+/***/ "./static/images/img-01-screen.jpg":
+/*!*****************************************!*\
+  !*** ./static/images/img-01-screen.jpg ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-01-screen-2e30b1b5f0ca1a27753f6baca688f544.jpg";
+
+/***/ }),
+
+/***/ "./static/images/img-02-badge-apple@4x.png":
+/*!*************************************************!*\
+  !*** ./static/images/img-02-badge-apple@4x.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-02-badge-apple@4x-3e49f660dfff06b38fdecf5932ed2471.png";
+
+/***/ }),
+
+/***/ "./static/images/img-02-badge-google@3x.png":
+/*!**************************************************!*\
+  !*** ./static/images/img-02-badge-google@3x.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-02-badge-google@3x-4711e8cfa16668a5b6f2133807bbcf81.png";
+
+/***/ }),
+
+/***/ "./static/images/img-02-triple@3x.png":
+/*!********************************************!*\
+  !*** ./static/images/img-02-triple@3x.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-02-triple@3x-af83c8cfee2486cab0438092604c0ce3.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-budapest@3x.png":
+/*!**********************************************!*\
+  !*** ./static/images/img-03-budapest@3x.png ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-budapest@3x-7e9559bac617b7332ffcde81a344f97a.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-laos@3x.png":
+/*!******************************************!*\
+  !*** ./static/images/img-03-laos@3x.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-laos@3x-a90f8d4369017dbf02cee20bcb18e4c3.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-london@3x.png":
+/*!********************************************!*\
+  !*** ./static/images/img-03-london@3x.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-london@3x-8f02d1f817ae09386cd0b1ff4f67805b.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-melbourne@3x.png":
+/*!***********************************************!*\
+  !*** ./static/images/img-03-melbourne@3x.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-melbourne@3x-da7c71fcf4422342b5c08825fac60d4c.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-newyork@3x.png":
+/*!*********************************************!*\
+  !*** ./static/images/img-03-newyork@3x.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-newyork@3x-6b8196ff4b67b3cd6d141c1027ccf89c.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-osaka@3x.png":
+/*!*******************************************!*\
+  !*** ./static/images/img-03-osaka@3x.png ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-osaka@3x-fc552a3ef81837c2c8d4f67878037893.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-paris@3x.png":
+/*!*******************************************!*\
+  !*** ./static/images/img-03-paris@3x.png ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-paris@3x-d19b8be88ea5e876ca6a13b3a7705585.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-rome@3x.png":
+/*!******************************************!*\
+  !*** ./static/images/img-03-rome@3x.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-rome@3x-2d5b63681bf9225115ab979e59566d2d.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-sapporo@3x.png":
+/*!*********************************************!*\
+  !*** ./static/images/img-03-sapporo@3x.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-sapporo@3x-1c8501801d055ae52cb772622fa8dd5e.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-sydney@3x.png":
+/*!********************************************!*\
+  !*** ./static/images/img-03-sydney@3x.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-sydney@3x-a5060c1223793d969d19d355ed83f43e.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-tokyo@3x.png":
+/*!*******************************************!*\
+  !*** ./static/images/img-03-tokyo@3x.png ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-tokyo@3x-d763bb4cbe18cb227830034bf4e84eca.png";
+
+/***/ }),
+
+/***/ "./static/images/img-03-vladivostok@3x.png":
+/*!*************************************************!*\
+  !*** ./static/images/img-03-vladivostok@3x.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/img-03-vladivostok@3x-3eb1a10700581ff9b73cf621c6cf8d39.png";
+
+/***/ }),
+
 /***/ 0:
-/*!****************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fintro&absolutePagePath=%2FUsers%2Fnoah%2Fgithub%2Fcode-test%2Ftriple-clone-coding%2Fpages%2Fintro.tsx ***!
-  \****************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fintro&absolutePagePath=%2FUsers%2Fnoah%2Fgithub%2Fcode-test%2Ftriple-coding-nextjs%2Fpages%2Fintro.tsx ***!
+  \*****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fintro&absolutePagePath=%2FUsers%2Fnoah%2Fgithub%2Fcode-test%2Ftriple-clone-coding%2Fpages%2Fintro.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fintro&absolutePagePath=%2FUsers%2Fnoah%2Fgithub%2Fcode-test%2Ftriple-clone-coding%2Fpages%2Fintro.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fintro&absolutePagePath=%2FUsers%2Fnoah%2Fgithub%2Fcode-test%2Ftriple-coding-nextjs%2Fpages%2Fintro.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fintro&absolutePagePath=%2FUsers%2Fnoah%2Fgithub%2Fcode-test%2Ftriple-coding-nextjs%2Fpages%2Fintro.tsx!./");
 
 
 /***/ }),
