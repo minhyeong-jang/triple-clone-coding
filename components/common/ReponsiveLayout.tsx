@@ -5,7 +5,7 @@ import { Waypoint } from "react-waypoint";
 const Container = styled.div`
   ${props => props.theme.container};
   &.heading {
-    background-image: url("/static/images/img-01-bg.png");
+    background-image: url(${require("../../static/images/img-01-bg.png")});
   }
   &.country {
     background: center center / cover rgb(250, 250, 250);

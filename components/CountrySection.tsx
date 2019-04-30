@@ -131,21 +131,18 @@ const CountrySection: React.FunctionComponent<Props> = () => {
         </div>
       </Heading>
       <ImageList>
-        <img className="fadeInUp" src="/static/images/img-03-newyork@3x.png" />
-        <img
-          className="fadeInUp"
-          src="/static/images/img-03-vladivostok@3x.png"
-        />
-        <img className="fadeInUp" src="/static/images/img-03-rome@3x.png" />
-        <img className="fadeInUp" src="/static/images/img-03-sydney@3x.png" />
-        <img className="fadeInUp" src="/static/images/img-03-sapporo@3x.png" />
-        <img className="fadeInUp" src="/static/images/img-03-tokyo@3x.png" />
-        <img className="fadeInUp" src="/static/images/img-03-osaka@3x.png" />
-        <img className="fadeInUp" src="/static/images/img-03-laos@3x.png" />
-        <img className="fadeInUp" src="/static/images/img-03-paris@3x.png" />
-        <img className="fadeInUp" src="/static/images/img-03-london@3x.png" />
-        <img className="fadeInUp" src="/static/images/img-03-budapest@3x.png" />
-        <img className="fadeInUp" src="/static/images/img-03-melbourne@3x.png" />
+        <img className="fadeInUp" src={require("../static/images/img-03-newyork@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-vladivostok@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-rome@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-sydney@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-sapporo@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-tokyo@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-osaka@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-laos@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-paris@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-london@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-budapest@3x.png")} />
+        <img className="fadeInUp" src={require("../static/images/img-03-melbourne@3x.png")} />
       </ImageList>
     </ReponsiveLayout>
   );

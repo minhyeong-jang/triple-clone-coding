@@ -6,12 +6,12 @@ const Container = styled.div`
   position: absolute;
   top: 0px;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   padding: 83px 50px 17px;
 `;
 const Logo = styled.div`
   display: inline-block;
-  background-image: url("/static/images/img-main-logo-white@3x.png");
+  background-image: url(${require("../../static/images/img-main-logo-white@3x.png")});
   width: 77px;
   height: 25px;
   background-size: 77px 25px;

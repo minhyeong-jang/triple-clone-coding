@@ -26,7 +26,7 @@ const Logo = styled.a`
   width: 68px;
   height: 24px;
   background-size: cover;
-  background-image: url("/static/images/img-intro-logo-dark@2x.png");
+  background-image: url(${require("../../static/images/img-intro-logo-dark@2x.png")});
   transform: translateY(-50%);
 `;
 const ExtraActionsContainer = styled.ul`

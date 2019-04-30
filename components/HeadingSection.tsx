@@ -54,7 +54,7 @@ const HeadingSection: React.FunctionComponent<Props> = () => {
         </AppButton>
       </HeadingContent>
       <PhoneContainer className="fadeIn">
-        <PhoneFrame imageUrl="/static/images/img-01-screen.jpg" />
+        <PhoneFrame imageUrl={require("../static/images/img-01-screen.jpg")} />
       </PhoneContainer>
     </ReponsiveLayout>
   );

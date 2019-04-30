@@ -11,7 +11,7 @@ const ContentLogo = styled.div`
   height: 338px;
   padding-top: 280px;
   font-size: 15px;
-  background-image: url("/static/images/img-02-triple@3x.png");
+  background-image: url(${require("../static/images/img-02-triple@3x.png")});
   background-size: cover;
   text-align: center;
   color: ${props => props.theme.lightBlackColor};
@@ -81,7 +81,7 @@ const BoastSection: React.FunctionComponent<Props> = () => {
       <AwardsContainer className="fadeInUp">
         <AwardItem
           style={{
-            backgroundImage: "url(/static/images/img-02-badge-google@3x.png)"
+            backgroundImage: `url(${require("../static/images/img-02-badge-google@3x.png")}`
           }}
         >
           2018 구글 플레이스토어
@@ -90,7 +90,7 @@ const BoastSection: React.FunctionComponent<Props> = () => {
         </AwardItem>
         <AwardItem
           style={{
-            backgroundImage: "url(/static/images/img-02-badge-apple@4x.png)"
+            backgroundImage: `url(${require("../static/images/img-02-badge-apple@4x.png")}`
           }}
         >
           2018 애플 앱스토어
